@@ -18,7 +18,7 @@
         
         <h1>Ecco le tue email</h1>
         <ul>
-          <li v-for="email in my_email">
+          <li v-for="email in my_email" v-show="my_email.length === number_email">
             {{email}}
           </li>
         </ul>
