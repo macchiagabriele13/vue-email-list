@@ -17,10 +17,11 @@
     <div id="app">
         
         <h1>Ecco le tue email</h1>
+        <button @click="generateEmail()" type="submit">Genera email</button>
         <ul>
-          <li v-for="email in my_email" v-show="my_email.length === number_email">
-            {{email}}
-          </li>
+            <li v-for="email in my_email" >
+              {{email}}
+            </li>
         </ul>
 
     </div>

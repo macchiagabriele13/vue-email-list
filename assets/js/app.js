@@ -8,6 +8,12 @@ createApp({
     }
   },
   methods:{
+    generateEmail(){
+
+      this.getEmails()
+
+        
+    },
     getEmails(){ 
         for (let index = 0; index < this.number_email; index++) {
             
@@ -23,6 +29,6 @@ createApp({
 
   },
   mounted(){
-    this.getEmails()
+    this.generateEmail()
   }
 }).mount('#app')
